@@ -1,0 +1,27 @@
+diff --git a/data/io.gitlab.cyberphantom52.sudoku_solver.appdata.xml.in b/data/io.gitlab.cyberphantom52.sudoku_solver.appdata.xml.in
+index 5f15375..2018fe7 100644
+--- a/data/io.gitlab.cyberphantom52.sudoku_solver.appdata.xml.in
++++ b/data/io.gitlab.cyberphantom52.sudoku_solver.appdata.xml.in
+@@ -20,7 +20,7 @@
+ 	<launchable type="desktop-id">io.gitlab.cyberphantom52.sudoku_solver.desktop</launchable>
+ 
+ 	<screenshots>
+-		<screenshot>
++		<screenshot type="default">
+ 			<image>https://gitlab.com/cyberphantom52/sudoku-solver/-/raw/7783afe728aa8aa802405ddd28e2ddf7ff72b7df/screenshot.png</image>
+ 		</screenshot>
+ 	</screenshots>
+diff --git a/data/io.gitlab.cyberphantom52.sudoku_solver.desktop.in b/data/io.gitlab.cyberphantom52.sudoku_solver.desktop.in
+index 5ea5ce8..1f21a31 100644
+--- a/data/io.gitlab.cyberphantom52.sudoku_solver.desktop.in
++++ b/data/io.gitlab.cyberphantom52.sudoku_solver.desktop.in
+@@ -4,5 +4,6 @@ Exec=sudoku-solver
+ Icon=io.gitlab.cyberphantom52.sudoku_solver
+ Terminal=false
+ Type=Application
+-Categories=GTK;
++Categories=Game;
++Keywords=Sudoku;Solver;
+ StartupNotify=true
+--
+libgit2 1.7.2
