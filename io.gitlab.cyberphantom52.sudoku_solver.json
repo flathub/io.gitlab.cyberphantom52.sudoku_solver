@@ -1,7 +1,7 @@
 {
     "id" : "io.gitlab.cyberphantom52.sudoku_solver",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "43",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -51,6 +51,10 @@
                     "type" : "archive",
                     "url" : "https://gitlab.com/cyberphantom52/sudoku-solver/uploads/99266304e9dff1deb736a5f0d56bd386/sudoku-solver-1.0.1.tar.xz",
                     "sha256" : "1e05739fc1353701ee8e418f80a94ebba6bb778b92f5a9f90c8e522f2efbf0eb"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "fix_appdata.patch"
                 }
             ]
         }
