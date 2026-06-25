@@ -21,7 +21,3 @@ flatpak run io.gitlab.cyberphantom52.sudoku_solver
 git clone git@github.com:flathub/io.gitlab.cyberphantom52.sudoku_solver.git
 flatpak run org.flatpak.Builder build-dir --user --ccache --force-clean --install io.gitlab.cyberphantom52.sudoku_solver.json
 ```
-
----
-
-**Technologies**: GNOME, GTK4, Libadwaita, Rust

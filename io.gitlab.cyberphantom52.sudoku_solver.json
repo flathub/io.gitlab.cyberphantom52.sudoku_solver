@@ -1,48 +1,37 @@
 {
-    "id" : "io.gitlab.cyberphantom52.sudoku_solver",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "49",
-    "sdk" : "org.gnome.Sdk",
-    "sdk-extensions" : [
+    "id": "io.gitlab.cyberphantom52.sudoku_solver",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "50",
+    "sdk": "org.gnome.Sdk",
+    "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
     ],
-    "command" : "sudoku-solver",
-    "finish-args" : [
+    "command": "sudoku-solver",
+    "finish-args": [
         "--share=ipc",
         "--socket=fallback-x11",
         "--device=dri",
         "--socket=wayland"
     ],
-    "build-options" : {
-        "append-path" : "/usr/lib/sdk/rust-stable/bin"
+    "build-options": {
+        "append-path": "/usr/lib/sdk/rust-stable/bin"
     },
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
-    ],
-    "modules" : [
+    "modules": [
         {
-            "name" : "sudoku-solver",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "sudoku-solver",
+            "buildsystem": "meson",
+            "config-opts": [
                 "-Dbuildtype=release"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "archive",
-                    "url" : "https://gitlab.com/cyberphantom52/sudoku-solver/uploads/99266304e9dff1deb736a5f0d56bd386/sudoku-solver-1.0.1.tar.xz",
-                    "sha256" : "1e05739fc1353701ee8e418f80a94ebba6bb778b92f5a9f90c8e522f2efbf0eb"
+                    "type": "archive",
+                    "url": "https://gitlab.com/cyberphantom52/sudoku-solver/uploads/99266304e9dff1deb736a5f0d56bd386/sudoku-solver-1.0.1.tar.xz",
+                    "sha256": "1e05739fc1353701ee8e418f80a94ebba6bb778b92f5a9f90c8e522f2efbf0eb"
                 },
                 {
-                    "type" : "patch",
-                    "path" : "fix_appdata.patch"
+                    "type": "patch",
+                    "path": "fix_appdata.patch"
                 }
             ]
         }
